@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1 id="title">CampX Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+            <form id="survey-form">
+                <div class="form-inputs">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required class="orientation">
+                </div>
+
+                <div class="form-inputs">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" placeholder="Enter your Email" required class="orientation">
+                </div>
+
+                <div class="form-inputs">
+                    <label for="number" id="number-label">Age <span class="optionalcheck">(optional)</span></label>
+                    <input type="number" id="number" placeholder="Age" min="10" max="99" class="orientation">
+                </div>
+
+                <div class="form-inputs">
+                    <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+                    <select id="dropdown" name="role" class="orientation" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="full time job">Full Time Job</option>
+                        <option value="full time learner">Full Time Learner</option>
+                        <option value="prefer not to say">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-inputs">
+                    <p>Would you recommend CampX to a friend?</p>
+                    <div class="option">
+                        <input type="radio" class="radio" value="definitely" name="radio-buttons">
+                        <label for="radio">Definitely</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" value="maybe" name="radio-buttons">
+                        <label for="radio">Maybe</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" value="not sure" name="radio-buttons">
+                        <label for="radio">Not Sure</label>
+                    </div>
+                </div>
+
+                <div class="form-inputs">
+                    <label for="dropdown2">What is your favorite feature of CampX?</label>
+                    <select id="dropdown2" name="feature" class="orientation" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="open source">Open Source</option>
+                    </select>
+                </div>
+
+                <div class="form-inputs">
+                    <p> What would you like to see improved?
+                        <span class="optionalcheck">(check all that apply)</span>
+                    </p>
+                    <div class="option">
+                        <input type="checkbox" name="improved" class="checkbox" value="front-end projects">
+                        <label for="checkbox">Front-end Projects </label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="improved" class="checkbox" value="back-end projects">
+                        <label for="checkbox"> Back-end Projects </label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="improved" class="checkbox" value="data visualization">
+                        <label for="checkbox">Data Visualization</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="improved" class="checkbox" value="challenges">
+                        <label for="checkbox">Challenges</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="improved" class="checkbox" value="open source community">
+                        <label for="checkbox">Open Source Community</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="improved" class="checkbox" value="gitter help rooms">
+                        <label for="checkbox">Gitter help rooms</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="improved" class="checkbox" value="videos">
+                        <label for="checkbox">Videos</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="improved" class="checkbox" value="city meetups">
+                        <label for="checkbox">City Meetups</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="improved" class="checkbox" value="wiki">
+                        <label for="checkbox">Wiki</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="improved" class="checkbox" value="forum">
+                        <label for="checkbox">Forum</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="improved" class="checkbox" value="additional courses">
+                        <label for="checkbox">Additional Courses</label>
+                    </div>
+                </div>
+
+                <div class="form-inputs">
+                    <p>Any comments or suggestions?</p>
+                    <textarea id="textarea" placeholder=" Enter your comments here..."></textarea>
+                </div>
+
+                <div class="form-inputs">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
