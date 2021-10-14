@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  font-size: 20.8px;
+  font-size: 1.3rem;
   line-height: 1.6rem;
   color: #ffffff;
   background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg);
@@ -122,7 +122,27 @@ p {
 }
 
 @media (max-width: 500px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  #title {
+    font-size: 2rem;
+  }
+
+  #description {
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+  }
+
   #survey-form {
-    width: 80%;
+    width: 90%;
+    padding: 0;
+  }
+
+  #name,
+  #email,
+  #number {
+    padding-left: 0;
   }
 }
